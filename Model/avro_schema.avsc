@@ -1,0 +1,1 @@
+{"type":"record","name":"Ticket","namespace":"<empty>","fields":[{"name":"tag","type":"string"}]}

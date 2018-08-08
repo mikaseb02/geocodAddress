@@ -1,0 +1,17 @@
+{
+  "namespace":"com.amdocs.sky.esim",
+  "name":"Violation",
+  "type":"record",
+  "doc":"",
+  "fields":[
+    {"name":"violation_id","type":{"type":"string","avro.java.string":"String"},"default":"","role":"id"},
+    {"name":"event_time","type":{"type":"long","logicalType":"timestamp-millis"},"role":"ts"},
+    {"name":"metric_id","type":{"type":"string","avro.java.string":"String"},"default":""},
+	{"name":"error_code","type":[{"type":"string","avro.java.string":"String"},"null"],"default":""},
+    {"name":"max_threshold","type":[{"type":"string","avro.java.string":"String"},"null"],"default":""},
+    {"name":"current_threshold","type":[{"type":"string","avro.java.string":"String"},"null"],"default":""},
+    {"name":"duration_interval","type":[{"type":"long","avro.java.string":"String"},"null"],"default":""},
+    {"name":"alert_interval","type":[{"type":"long","avro.java.string":"String"},"null"],"default":""},
+    {"name":"description","type":[{"type":"string","avro.java.string":"String"},"null"],"default":""}
+ ]
+}  
